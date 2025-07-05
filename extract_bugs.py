@@ -20,7 +20,7 @@ for root, dirs, files in os.walk(DATA_DIR):
                 with open(full_path, 'r', encoding='utf-8') as f:
                     bug_data = json.load(f)
                     
-                    # Extract the fields we want (use .get to avoid errors)
+                    # Extract the fields 
                     bug_info = {
                         'file': bug_data.get('file', ''),
                         'bug_type': bug_data.get('bug_type', ''),
